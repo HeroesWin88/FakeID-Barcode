@@ -1,3 +1,6 @@
+//document.getElementsByName("yearExp")[0].value + toD(document.getElementsByName("monthExp")[0].value) + toD(document.getElementsByName("dayExp")[0].value)
+//(parseInt(document.getElementsByName("yeari")[0].value) + 4).toString() + toD(document.getElementsByName("monthb")[0].value) + toD(document.getElementsByName("dayb")[0].value)
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
@@ -11,7 +14,7 @@
 
     <script>
         function go() {
-            var hub3_code = "@\x0A\x1C\x0DANSI 6360450101DL00300203DLDAQ" + document.getElementsByName("DL")[0].value + "\x0ADAA" + document.getElementsByName("last")[0].value.toUpperCase() + "," + document.getElementsByName("first")[0].value.toUpperCase() + "," + document.getElementsByName("middle")[0].value.toUpperCase() + ",\x0ADAG" + document.getElementsByName("address")[0].value.toUpperCase() + "\x0ADAI" + document.getElementsByName("city")[0].value.toUpperCase() + "\x0ADAJWA\x0ADAK" + document.getElementsByName("zip")[0].value.toUpperCase() + "  \x0ADAR" + document.getElementsByName("class")[0].value.toUpperCase() + "   \x0ADAS" + document.getElementsByName("RC")[0].value.toUpperCase() + "          \x0ADAT" + document.getElementsByName("EC")[0].value.toUpperCase() + "     \x0ADAU" + document.getElementsByName("HFT")[0].value + toD(document.getElementsByName("HIN")[0].value) + "\x0ADAW" + document.getElementsByName("weight")[0].value.toUpperCase() + "\x0ADAY" + document.getElementsByName("eye")[0].value.toUpperCase() + "   \x0ADAZ" + document.getElementsByName("hair")[0].value.toUpperCase() + "   \x0ADBA" + (parseInt(document.getElementsByName("yeari")[0].value) + 10).toString() + toD(document.getElementsByName("monthb")[0].value) + toD(document.getElementsByName("dayb")[0].value) + "\x0ADBB" + document.getElementsByName("yearb")[0].value + toD(document.getElementsByName("monthb")[0].value) + toD(document.getElementsByName("dayb")[0].value) + "\x0ADBC" + document.getElementsByName("gender")[0].value + "\x0ADBD" + document.getElementsByName("yeari")[0].value + toD(document.getElementsByName("monthi")[0].value) + toD(document.getElementsByName("dayi")[0].value) + "\x0ADBG" + document.getElementsByName("internal")[0].value + "\x0ADBH" + document.getElementsByName("organ")[0].value;
+            var hub3_code = "@\x0A\x1C\x0DANSI 6360450101DL00300203DLDAQ" + document.getElementsByName("DL")[0].value + "\x0ADAA" + document.getElementsByName("last")[0].value.toUpperCase() + "," + document.getElementsByName("first")[0].value.toUpperCase() + "," + document.getElementsByName("middle")[0].value.toUpperCase() + ",\x0ADAG" + document.getElementsByName("address")[0].value.toUpperCase() + "\x0ADAI" + document.getElementsByName("city")[0].value.toUpperCase() + "\x0ADAJWA\x0ADAK" + document.getElementsByName("zip")[0].value.toUpperCase() + "  \x0ADAR" + document.getElementsByName("class")[0].value.toUpperCase() + "   \x0ADAS" + document.getElementsByName("RC")[0].value.toUpperCase() + "          \x0ADAT" + document.getElementsByName("EC")[0].value.toUpperCase() + "     \x0ADAU" + document.getElementsByName("HFT")[0].value + toD(document.getElementsByName("HIN")[0].value) + "\x0ADAW" + document.getElementsByName("weight")[0].value.toUpperCase() + "\x0ADAY" + document.getElementsByName("eye")[0].value.toUpperCase() + "   \x0ADAZ" + document.getElementsByName("hair")[0].value.toUpperCase() + "   \x0ADBA" + document.getElementsByName("yearExp")[0].value + toD(document.getElementsByName("monthExp")[0].value) + toD(document.getElementsByName("dayExp")[0].value) + "\x0ADBB" + document.getElementsByName("yearb")[0].value + toD(document.getElementsByName("monthb")[0].value) + toD(document.getElementsByName("dayb")[0].value) + "\x0ADBC" + document.getElementsByName("gender")[0].value + "\x0ADBD" + document.getElementsByName("yeari")[0].value + toD(document.getElementsByName("monthi")[0].value) + toD(document.getElementsByName("dayi")[0].value) + "\x0ADBG" + document.getElementsByName("internal")[0].value + "\x0ADBH" + document.getElementsByName("organ")[0].value;
 
 
             PDF417.init(hub3_code,4);
@@ -122,6 +125,15 @@
     <br />
     <br /> Day (Issued):
     <input type="number" name="dayi" min="1" max="31" value="22"></input>
+    <br />
+    <br />Year (Expired):
+    <input type="number" name="yearExp" min="2022" max ="2100" value="2026"></input>
+    <br />
+    <br />Month (Expired) *SHOULD BE SAME AS BIRTHMONTH IN MOST CASES*:
+    <input type="number" name="monthExp" min="1" max="12" value="1"></input>
+    <br />
+    <br />Day (Expired) *SHOULD BE SAME AS DAY BORN IN MOST CASES*:
+    <input type="number" name="dayExp" min="1" max="31" value="24"></input>
     <br />
     <br /> Gender:
     <select name="gender">
