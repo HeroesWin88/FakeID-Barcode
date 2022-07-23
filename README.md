@@ -6,7 +6,7 @@ Generator for fake ID barcodes. (Currently SC only, looking to expand).
 Where dat source at doe?
 ========================
 
-https://github.com/OsamaBinNaughty/FakeID-Barcode/tree/gh-pages
+https://github.com/HeroesWin88/FakeID-Barcode/tree/gh-pages
 
 I have it under the public pages section.
 
