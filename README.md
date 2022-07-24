@@ -1,14 +1,11 @@
 FakeID-Barcode
 ==============
 
-Generator for fake ID barcodes. (Currently SC only, looking to expand).
+Web based generator for driver's license / ID card barcodes (PDF417)  (Currently WA only but will likely add other states eventually).
 
-Where dat source at doe?
-========================
+Source code can be found at: 
 
 https://github.com/HeroesWin88/FakeID-Barcode/tree/gh-pages
-
-I have it under the public pages section.
 
 Disclaimer
 ==========
