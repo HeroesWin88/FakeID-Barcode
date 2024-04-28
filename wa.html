@@ -122,7 +122,7 @@
          function getEyeColorCode() {
             let color = getValue('eyeColor');
             switch (color.toLowerCase()) {
-                case 'brown': return "BRN";
+                case 'brown': return "BRO";
                 case 'blue': return "BLU";
                 case 'green': return "GRN";
                 case 'hazel': return "HZL";
@@ -131,7 +131,21 @@
                 default: return "";  // default case to handle unexpected values
             }
         }
-        
+	
+	   function getHairColorCode() {
+             let color = getValue('hair');
+             switch (color.toLowerCase()) {
+                case 'brown': return "BRO";
+                case 'blonde': return "BLD";
+                case 'black': return "BLK";
+                case 'red': return "RED";
+                case 'gray': return "GRY";
+                case 'white': return "WHI";
+                case 'bald': return "BAL";
+                default: return "";  // default case to handle unexpected values
+             }
+           }
+	    
         function getAuditInfo(){
             let day = formatDate(getValue('dayIssued'));
             let month = formatDate(getValue('monthIssued'));
